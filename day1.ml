@@ -35,7 +35,7 @@ let rec count_increases k xs =
     compare first second + count_increases k tl
 
 let () =
-  let xs = get_input "day1.in" in
+  let xs = get_input "day1.txt" in
   let answer1 = count_increases 1 xs in
   let answer2 = count_increases 3 xs in
   Printf.printf "Problem 1: %d\nProblem 2: %d\n" answer1 answer2
